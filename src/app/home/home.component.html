@@ -1,0 +1,29 @@
+<app-header></app-header>
+<section class="home">
+    <div class="home-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            Hi there! I'm Sadham Hussain, a passionate software developer with a love for creating
+            innovative solutions and exploring new technologies.
+        </p>
+        <p>
+            On this website, you'll find a showcase of my projects, a glimpse into my technical
+            skills, and a bit about who I am beyond the code. Feel free to explore and get in touch!
+        </p>
+        <button routerLink="/about" color="primary" mat-raised-button>Learn More</button>
+
+
+    </div>
+
+    <div class="carousel-div">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+            <div ngxSlickItem *ngFor="let project of projects">
+                <!-- Each slide in the carousel -->
+                <img [src]="project.image" alt="{{ project.title }}" height="100px" width="100px">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>

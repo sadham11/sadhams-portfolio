@@ -1,0 +1,18 @@
+<!-- app/header/header.component.html -->
+
+<mat-toolbar color="primary">
+    <div class="logo">
+        <button mat-button routerLink="/">Sadham Hussain</button>
+    </div>
+    <nav mat-tab-nav-bar class="links">
+        <button mat-button mat-tab-link routerLink="/" routerLinkActive #homeLink="routerLinkActive">Home</button>
+        <button mat-button mat-tab-link routerLink="/about" routerLinkActive
+            #aboutLink="routerLinkActive">About</button>
+        <button mat-button mat-tab-link routerLink="/projects" routerLinkActive
+            #projectsLink="routerLinkActive">Projects</button>
+        <button mat-button mat-tab-link routerLink="/contact" routerLinkActive
+            #contactLink="routerLinkActive">Contact</button>
+        <button mat-button mat-tab-link routerLink="/resume" routerLinkActive
+            #resumeLink="routerLinkActive">Resume</button>
+    </nav>
+</mat-toolbar>

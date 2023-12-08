@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<!-- contact.component.html -->
+
+<section class="contact-section">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <mat-form-field appearance="outline">
+                <mat-label>Your Name:</mat-label>
+                <input matInput type="text" id="name" name="name" required [(ngModel)]="formData.name">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Your Email:</mat-label>
+                <input matInput type="email" id="email" name="email" required [(ngModel)]="formData.email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Your Message:</mat-label>
+                <textarea matInput id="message" name="message" rows="4" required
+                    [(ngModel)]="formData.message"></textarea>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="button" (click)="submitForm()">Submit</button>
+        </form>
+    </div>
+</section>
