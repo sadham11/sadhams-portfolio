@@ -9,28 +9,38 @@ export class HomeComponent {
   projects = [
     {
       title: 'UPDA',
-      description: 'Description of Project 1',
-      image: 'assets/project1.jpeg',
+      description: 'Planning and Urban Development Authority (UPDA) website.',
+      image: 'assets/projects/upda.png',
       link: 'https://services.planning.bh/',
     },
     {
       title: 'Iqraa',
-      description: 'Description of Project 2',
-      image: 'assets/project2.jpeg',
+      description:
+        'Educational institution management application (Iqraa) website.',
+      image: 'assets/projects/iqraa.png',
       link: 'https://iqraa.site/',
     },
     {
       title: 'Serene ERP',
-      description: 'Description of Project 2',
-      image: 'assets/project2.jpeg',
+      description:
+        'Enterprise Resource Planning (ERP) system for business management.',
+      image: 'assets/projects/serene.png',
+      link: null,
     },
-
     {
-      title: '',
-      description: 'Description of Project 2',
-      image: 'assets/project2.jpeg',
+      title: 'BeAware Bahrain',
+      description:
+        'Contact tracing mobile application for Covid-19 with a backoffice application.',
+      image: 'assets/projects/beaware.png',
+      link: null, // Add your actual link
     },
-    // Add more projects as needed
+    {
+      title: 'AAAS – Transmit',
+      description:
+        'Transmit is a third-party tool for authentication using diagrams.',
+      image: 'assets/projects/confidential.png',
+      link: null,
+    },
   ];
 
   slideConfig = {

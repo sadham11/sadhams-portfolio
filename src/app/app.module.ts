@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsComponent,
     ContactComponent,
     ResumeComponent,
+    CustomLayoutComponent,
   ],
   imports: [
     BrowserModule,

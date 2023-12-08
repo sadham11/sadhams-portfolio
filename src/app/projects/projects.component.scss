@@ -1,0 +1,41 @@
+.projects {
+    margin-bottom: 30px;
+
+    .section-heading {
+        font-size: 1.5em;
+        color: #2c3e50; /* Dark Blue */
+        margin-bottom: 15px;
+    }
+
+    .project-item {
+        background-color: #ecf0f1; /* Light Gray */
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+
+        .project-title {
+            font-size: 1.5em;
+            color: #3498db; /* Blue */
+            margin: 8px;
+        }
+
+        .project-role,
+        .project-tech,
+        .project-team {
+            font-size: 1.1em;
+            color: #555;
+            margin: 3px 0;
+
+            strong {
+                font-weight: bold;
+                color: #333;
+            }
+        }
+
+        .project-description {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    }
+}

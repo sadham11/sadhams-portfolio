@@ -56,3 +56,32 @@ nav {
         }
     }
 }
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index value based on your layout */
+}
+
+.menu-button {
+    display: none;
+    /* Hide the menu button on larger screens */
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-menu {
+        display: block;
+        /* Show the menu for smaller screens */
+    }
+
+    .links {
+        display: none;
+        /* Hide the tab bar for smaller screens */
+    }
+
+    .menu-button {
+        display: block;
+        /* Show the menu button for smaller screens */
+    }
+}

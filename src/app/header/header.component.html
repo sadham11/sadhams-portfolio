@@ -1,10 +1,18 @@
-<!-- app/header/header.component.html -->
-
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="sticky-header">
     <div class="logo">
-        <button mat-button routerLink="/">Sadham Hussain</button>
+        <button mat-button routerLink="/">
+            <ng-container *ngIf="!isMobile; else mobileView">
+                Sadham's Portfolio
+            </ng-container>
+            <ng-template #mobileView>
+                <div class="initials-circle">SH</div>
+            </ng-template>
+        </button>
     </div>
-    <nav mat-tab-nav-bar class="links">
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-button">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <nav mat-tab-nav-bar class="links" *ngIf="!isMobile">
         <button mat-button mat-tab-link routerLink="/" routerLinkActive #homeLink="routerLinkActive">Home</button>
         <button mat-button mat-tab-link routerLink="/about" routerLinkActive
             #aboutLink="routerLinkActive">About</button>
@@ -15,4 +23,11 @@
         <button mat-button mat-tab-link routerLink="/resume" routerLinkActive
             #resumeLink="routerLinkActive">Resume</button>
     </nav>
+    <mat-menu #menu="matMenu" class="mobile-menu">
+        <button mat-menu-item routerLink="/" routerLinkActive #homeLink="routerLinkActive">Home</button>
+        <button mat-menu-item routerLink="/about" routerLinkActive #aboutLink="routerLinkActive">About</button>
+        <button mat-menu-item routerLink="/projects" routerLinkActive #projectsLink="routerLinkActive">Projects</button>
+        <button mat-menu-item routerLink="/contact" routerLinkActive #contactLink="routerLinkActive">Contact</button>
+        <button mat-menu-item routerLink="/resume" routerLinkActive #resumeLink="routerLinkActive">Resume</button>
+    </mat-menu>
 </mat-toolbar>
