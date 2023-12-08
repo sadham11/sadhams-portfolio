@@ -69,13 +69,15 @@
 .carousel-div {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    background-color: rgb(0 150 136 / 74%);
+    background-color: rgb(0 8 7 / 74%);
     color: #f0f4f4;
 }
 
 .image-container {
     height: 100px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+
     img {
         max-width: 100%;
         height: auto;
@@ -83,3 +85,48 @@
         margin: 0 auto;
     }
 }
+
+/* Add these styles to your CSS stylesheet */
+
+.technologies-section {
+    margin-top: 40px;
+}
+
+.technologies-section h2 {
+    font-size: 2em;
+    color: #333; /* Dark text color */
+}
+
+.technologies-section p {
+    font-size: 1.1em;
+    color: #555; /* Slightly darker text color */
+    margin-bottom: 20px;
+}
+
+.technology-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.technology-category {
+    text-align: center;
+}
+
+.technology-category h3 {
+    font-size: 1.5em;
+    color: #009688; /* Primary color */
+    margin-bottom: 10px;
+}
+
+.technology-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technology-category li {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333; /* Dark text color */
+}
+
+/* Adjust colors and font sizes based on your design preferences */

@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
     ContactComponent,
     ResumeComponent,
     CustomLayoutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

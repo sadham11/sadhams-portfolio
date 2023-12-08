@@ -1,0 +1,55 @@
+/* Add these styles to your CSS stylesheet */
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-links {
+    flex: 1;
+    margin-bottom: 20px;
+}
+// .social-links {
+//
+// }
+
+.contact-info h3,
+.social-links h3 {
+    font-size: 1.5em;
+}
+
+.contact-info p,
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links ul {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    //     /* margin: 44px; */
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+}
