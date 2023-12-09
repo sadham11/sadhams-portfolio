@@ -1,81 +1,72 @@
-<!-- Add this HTML code to the end of your HTML file, typically before the closing </body> tag -->
-
+<!-- HTML Code -->
 <footer class="footer">
     <div class="footer-content">
-        <div>
+        <!-- Contact Information -->
+        <div class="footer-content-item contact-items text-left">
             <div class="contact-item">
-                <a href="mailto:sadham10@gmail.com" style="color: white; display: flex; align-items: center;">
+                <i class="fas fa-envelope "></i>
+                <a href="mailto:sadham10@gmail.com" class="contact-link ml-2 mr-2">
                     {{ 'sadham10@gmail.com' }}
-
                 </a>
-                <button mat-icon-button (click)="copyToClipboard('sadham10@gmail.com')">
+                <button mat-icon-button (click)="copyToClipboard('sadham10@gmail.com')" class="copy-button">
                     <mat-icon>content_copy</mat-icon>
                 </button>
             </div>
             <div class="contact-item">
-                <a href="tel:+91 9176762772" style="color: white; display: flex; align-items: center;">
-                    {{ '+1 (123) 456-7890' }}
-
+                <i class="fas fa-phone-alt ml-2 mr-2"></i>
+                <a href="tel:+91 9176762772" class="contact-link">
+                    {{ '+91 9176762772' }}
                 </a>
-                <button mat-icon-button (click)="copyToClipboard('+11234567890')">
+                <button mat-icon-button (click)="copyToClipboard('+11234567890')" class="copy-button">
                     <mat-icon>content_copy</mat-icon>
                 </button>
             </div>
         </div>
 
-
-
-
-        <div class="social-links">
+        <!-- Social Links -->
+        <div class="footer-content-item social-links">
             <h3>Connect With Me</h3>
             <ul>
-                <li>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" style="color: white;">
+                <li><a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
                         <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/sadham11" target="_blank" style="color: white;">
+                    </a></li>
+                <li><a href="https://github.com/sadham11" target="_blank" class="social-link">
                         <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/yourusername" target="_blank" style="color: white;">
+                    </a></li>
+                <li><a href="https://instagram.com/yourusername" target="_blank" class="social-link">
                         <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/yourusername" target="_blank" style="color: white;">
+                    </a></li>
+                <li><a href="https://facebook.com/yourusername" target="_blank" class="social-link">
                         <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/yourusername" target="_blank" style="color: white;">
+                    </a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank" class="social-link">
                         <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
+                    </a></li>
                 <!-- Add more social links as needed -->
-                <!-- For a list of Font Awesome icons: https://fontawesome.com/icons -->
             </ul>
         </div>
 
-
-        <div class="social-links">
-            <h3>Connect With Me</h3>
+        <!-- Additional Social Links -->
+        <div class="footer-content-item social-links">
+            <h3>Recognition</h3>
             <ul>
-                <li><a href="https://linkedin.com/in/yourusername" target="_blank" style="color: white;">LinkedIn</a>
-                </li>
-                <li><a href="https://github.com/sadham11" target="_blank" style="color: white;">GitHub</a></li>
-                <!-- Add more social links as needed -->
+
+                <p class="achievement">
+                    🏅 Awarded the Prince Salman bin Hamad Medal for Medical Merit for contributions during COVID-19.
+                </p>
+
+                <!-- Add more achievements or testimonials as needed -->
             </ul>
         </div>
     </div>
 
-    <div class="current-time">
-        <p style="color: white;">Current Time: {{ getCurrentTime() }}</p>
-    </div>
-
-    <div class="copyright">
-        <p style="color: white;">&copy; 2023 Your Name. All rights reserved.</p>
+    <!-- Current Time and Copyright -->
+    <div class="footer-bottom">
+        <div class="current-time">
+            <p>{{ getCurrentTime() }}</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; {{currentYear}} Sadham Hussain. All rights reserved.</p>
+        </div>
     </div>
 </footer>

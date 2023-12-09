@@ -1,8 +1,7 @@
-/* Add these styles to your CSS stylesheet */
-
+/* CSS Code */
 .footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
@@ -13,43 +12,74 @@
     flex-wrap: wrap;
 }
 
-.contact-info,
-.social-links {
+.footer-content-item {
     flex: 1;
-    margin-bottom: 20px;
-}
-// .social-links {
-//
-// }
-
-.contact-info h3,
-.social-links h3 {
-    font-size: 1.5em;
 }
 
-.contact-info p,
-.social-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-links ul {
-    display: flex;
+.contact-items {
+    display: inline;
     justify-content: space-around;
+}
+
+.contact-item {
     display: flex;
-    //     /* margin: 44px; */
-    margin: 0px auto;
-    justify-content: center;
+    align-items: center;
+    a {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+.contact-icon {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+.copy-button {
+    color: white;
+}
+
+.social-links h3,
+.footer-bottom p {
+    font-size: 1.2em;
+}
+
+.social-links ul {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px !important;
+    list-style: none;
 }
 
 .social-links li {
     margin: 10px;
 }
 
-.copyright {
-    margin-top: 20px;
+.social-link {
+    color: #fff;
+    text-decoration: none;
 }
 
-.contact-item {
-    display: flex;
+.current-time,
+.copyright {
+    flex: 1;
 }
+
+.footer-bottom {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px !important;
+    list-style: none;
+}
+
+/* Add more styling as needed */

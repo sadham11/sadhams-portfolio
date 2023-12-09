@@ -2,13 +2,47 @@
 
 .home {
     background-color: #f8f8f8;
-    padding: 60px 20px;
+    // padding: 60px 20px;
     text-align: center;
+
+    .top-content {
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("/assets/developer.jpeg");
+        // background-image: url("/assets/developer.jpeg"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    }
+    .top-content {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        text-align: center;
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+        color: #fff; /* Set text color to white or a color that contrasts well with the background */
+        padding: 60px 20px;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #fff;
+        }
+    }
 
     .home-content {
         max-width: 800px;
         margin: 0 auto;
         padding: 1em;
+        text-align: center;
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+        color: #fff; /* Set text color to white or a color that contrasts well with the background */
+        padding: 60px 20px;
 
         h1 {
             font-size: 2.5em;
@@ -46,11 +80,7 @@
 
 /* home.component.scss */
 
-.carousel {
-    // background-color: #000; /* Set the background color to matte black */
-    width: 80%;
-    margin: 0 auto;
-}
+/* Add these styles to your existing SCSS stylesheet */
 
 .slide-item {
     display: flex;
@@ -58,6 +88,8 @@
     align-items: center;
     padding: 10px;
     background-color: #222; /* Adjust the background color to a darker shade of black */
+    border-radius: 10px; /* Add border-radius for a rounded appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
 }
 
 .slide-content {
@@ -71,6 +103,12 @@
     padding-bottom: 1.5em;
     background-color: rgb(0 8 7 / 74%);
     color: #f0f4f4;
+}
+
+.carousel {
+    // background-color: #000; /* Set the background color to matte black */
+    width: 80%;
+    margin: 0 auto;
 }
 
 .image-container {
